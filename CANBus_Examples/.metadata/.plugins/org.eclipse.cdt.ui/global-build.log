@@ -1,0 +1,14 @@
+18:57:28 **** Incremental Build of configuration Debug for project 3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\abdul\STM32CubeIDE\CANBus_Examples\3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.elf
+ 
+arm-none-eabi-size   3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.elf 
+arm-none-eabi-objdump -h -S  3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.elf  > "3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.list"
+   text	   data	    bss	    dec	    hex	filename
+   9392	     20	   1708	  11120	   2b70	3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 3.1_CANBUS_HAL_SEND_HCRS04_RECEIVE_DATA.list
+ 

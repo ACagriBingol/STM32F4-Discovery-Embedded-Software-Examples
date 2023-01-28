@@ -1,0 +1,6 @@
+1662228792446	Delete resource '001_BOOTLOADER_FIRST_PROJECT'
+1662236026231	Rename resource '0_CAN_Bus_Uart_First_Project'
+1662236065052	Delete resource '0_CAN_Bus_Uart_Without_Filter'
+1662244605519	Rename resource '2_CAN_Bus_ADC_I2C'
+1662244630506	Delete resource '2_CAN_Bus_ADC_I2C_DMA_SEND_DATA'
+1662246671652	Delete resource '2_CAN_Bus_ADC_I2C_DMA_SEND_DATA'

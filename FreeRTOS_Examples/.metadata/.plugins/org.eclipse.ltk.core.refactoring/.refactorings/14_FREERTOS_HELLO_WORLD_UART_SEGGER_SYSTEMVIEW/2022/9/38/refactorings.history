@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/13_FREERTOS_HELLO_WORLD_UART.ioc&apos; to &apos;14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW.ioc&apos;" description="Rename resource &apos;13_FREERTOS_HELLO_WORLD_UART.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="13_FREERTOS_HELLO_WORLD_UART.ioc" name="14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW.ioc" stamp="1662914347461" updateReferences="true"/>
+</session>

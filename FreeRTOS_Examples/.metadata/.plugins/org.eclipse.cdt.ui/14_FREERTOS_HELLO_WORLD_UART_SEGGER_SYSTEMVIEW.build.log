@@ -1,0 +1,91 @@
+20:30:11 **** Incremental Build of configuration Debug for project 14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW ****
+make -j8 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Config" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Patch" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/SEGGER" -I../Core/Inc -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.d" -MT"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Config" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Patch" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/SEGGER" -I../Core/Inc -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/org/source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/org/source/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/org/source/tasks.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Config" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Patch" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/SEGGER" -I../Core/Inc -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c: In function 'ulTaskGenericNotifyTake':
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4745:50: error: macro "traceTASK_NOTIFY_TAKE" passed 1 arguments, but takes just 0
+ 4745 |             traceTASK_NOTIFY_TAKE( uxIndexToWait );
+      |                                                  ^
+In file included from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig/FreeRTOSConfig.h:131,
+                 from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include/FreeRTOS.h:59,
+                 from ../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:39:
+D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os/SEGGER_SYSVIEW_FreeRTOS.h:205: note: macro "traceTASK_NOTIFY_TAKE" defined here
+  205 | #define traceTASK_NOTIFY_TAKE()                                                 SEGGER_SYSVIEW_RecordU32x2(apiID_OFFSET + apiID_ULTASKNOTIFYTAKE, xClearCountOnExit, xTicksToWait)
+      | 
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4745:13: error: 'traceTASK_NOTIFY_TAKE' undeclared (first use in this function)
+ 4745 |             traceTASK_NOTIFY_TAKE( uxIndexToWait );
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4745:13: note: each undeclared identifier is reported only once for each function it appears in
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c: In function 'xTaskGenericNotifyWait':
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4824:50: error: macro "traceTASK_NOTIFY_WAIT" passed 1 arguments, but takes just 0
+ 4824 |             traceTASK_NOTIFY_WAIT( uxIndexToWait );
+      |                                                  ^
+In file included from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig/FreeRTOSConfig.h:131,
+                 from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include/FreeRTOS.h:59,
+                 from ../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:39:
+D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os/SEGGER_SYSVIEW_FreeRTOS.h:217: note: macro "traceTASK_NOTIFY_WAIT" defined here
+  217 | #define traceTASK_NOTIFY_WAIT()                                                 SEGGER_SYSVIEW_RecordU32x4(apiID_OFFSET + apiID_XTASKNOTIFYWAIT, ulBitsToClearOnEntry, ulBitsToClearOnExit, (U32)pulNotificationValue, xTicksToWait)
+      | 
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4824:13: error: 'traceTASK_NOTIFY_WAIT' undeclared (first use in this function)
+ 4824 |             traceTASK_NOTIFY_WAIT( uxIndexToWait );
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c: In function 'xTaskGenericNotify':
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4931:47: error: macro "traceTASK_NOTIFY" passed 1 arguments, but takes just 0
+ 4931 |             traceTASK_NOTIFY( uxIndexToNotify );
+      |                                               ^
+In file included from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig/FreeRTOSConfig.h:131,
+                 from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include/FreeRTOS.h:59,
+                 from ../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:39:
+D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os/SEGGER_SYSVIEW_FreeRTOS.h:215: note: macro "traceTASK_NOTIFY" defined here
+  215 | #define traceTASK_NOTIFY()                                                      SEGGER_SYSVIEW_RecordU32x4(apiID_OFFSET + apiID_XTASKGENERICNOTIFY, SEGGER_SYSVIEW_ShrinkId((U32)pxTCB), ulValue, eAction, (U32)pulPreviousNotificationValue)
+      | 
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:4931:13: error: 'traceTASK_NOTIFY' undeclared (first use in this function)
+ 4931 |             traceTASK_NOTIFY( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c: In function 'xTaskGenericNotifyFromISR':
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:5073:56: error: macro "traceTASK_NOTIFY_FROM_ISR" passed 1 arguments, but takes just 0
+ 5073 |             traceTASK_NOTIFY_FROM_ISR( uxIndexToNotify );
+      |                                                        ^
+In file included from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig/FreeRTOSConfig.h:131,
+                 from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include/FreeRTOS.h:59,
+                 from ../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:39:
+D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os/SEGGER_SYSVIEW_FreeRTOS.h:216: note: macro "traceTASK_NOTIFY_FROM_ISR" defined here
+  216 | #define traceTASK_NOTIFY_FROM_ISR()                                             SEGGER_SYSVIEW_RecordU32x5(apiID_OFFSET + apiID_XTASKGENERICNOTIFYFROMISR, SEGGER_SYSVIEW_ShrinkId((U32)pxTCB), ulValue, eAction, (U32)pulPreviousNotificationValue, (U32)pxHigherPriorityTaskWoken)
+      | 
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:5073:13: error: 'traceTASK_NOTIFY_FROM_ISR' undeclared (first use in this function)
+ 5073 |             traceTASK_NOTIFY_FROM_ISR( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c: In function 'vTaskGenericNotifyGiveFromISR':
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:5164:61: error: macro "traceTASK_NOTIFY_GIVE_FROM_ISR" passed 1 arguments, but takes just 0
+ 5164 |             traceTASK_NOTIFY_GIVE_FROM_ISR( uxIndexToNotify );
+      |                                                             ^
+In file included from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/FreeRTOSConfig/FreeRTOSConfig.h:131,
+                 from D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/FreeRTOS/org/source/include/FreeRTOS.h:59,
+                 from ../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:39:
+D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/14_FREERTOS_HELLO_WORLD_UART_SEGGER_SYSTEMVIEW/Middlewares/Third_Party/SEGGER/Os/SEGGER_SYSVIEW_FreeRTOS.h:208: note: macro "traceTASK_NOTIFY_GIVE_FROM_ISR" defined here
+  208 | #define traceTASK_NOTIFY_GIVE_FROM_ISR()                                        SEGGER_SYSVIEW_RecordU32x2(apiID_OFFSET + apiID_VTASKNOTIFYGIVEFROMISR, SEGGER_SYSVIEW_ShrinkId((U32)pxTCB), (U32)pxHigherPriorityTaskWoken)
+      | 
+../Middlewares/Third_Party/FreeRTOS/org/source/tasks.c:5164:13: error: 'traceTASK_NOTIFY_GIVE_FROM_ISR' undeclared (first use in this function)
+ 5164 |             traceTASK_NOTIFY_GIVE_FROM_ISR( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Middlewares/Third_Party/FreeRTOS/org/source/subdir.mk:37: Middlewares/Third_Party/FreeRTOS/org/source/tasks.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c: In function 'myTask1':
+../Core/Src/main.c:224:22: warning: statement with no effect [-Wunused-value]
+  224 |      UART_ACCSESS_KEY==0;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:226:22: warning: statement with no effect [-Wunused-value]
+  226 |      UART_ACCSESS_KEY==1;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c: In function 'myTask2':
+../Core/Src/main.c:239:22: warning: statement with no effect [-Wunused-value]
+  239 |      UART_ACCSESS_KEY==0;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:241:22: warning: statement with no effect [-Wunused-value]
+  241 |      UART_ACCSESS_KEY==1;
+      |      ~~~~~~~~~~~~~~~~^~~
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+20:30:12 Build Failed. 12 errors, 4 warnings. (took 779ms)
+

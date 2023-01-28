@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:013_HAL_FLASH_ERASE_WRITE_READ.elf
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_10_2_HAL_TIM_SLAVE_TRIGGER_MODE_INTERNAL.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_10_HAL_TIM_SLAVE_TRIGGER_MODE_EXT.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_10_HAL_TIM_SLAVE_TRIGGER_MODE_EXT.elf/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_5_HAL_TIMER_EXT_TRIG_MODE1.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:007_5_HAL_TIMER_EXT_TRIG_MODE1.elf/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008_HAL_ADC_WITH_DMA.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:008_HAL_ADC_WITH_DMA.elf/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:013_HAL_FLASH_ERASE_WRITE_READ.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:013_HAL_FLASH_ERASE_WRITE_READ.elf/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXAMPLE_5_USE_ROLE.elf/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:EXAMPLE_6_USE_WIFI_MODULE.elf/activeLaunchMode=run

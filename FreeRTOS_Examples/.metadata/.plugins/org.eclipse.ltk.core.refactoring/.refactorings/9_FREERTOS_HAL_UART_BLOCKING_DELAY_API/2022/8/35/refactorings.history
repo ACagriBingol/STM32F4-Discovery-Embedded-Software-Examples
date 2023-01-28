@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;9_FREERTOS_BLOCKING_DELAY_API/8_INTERNAL_FREERTOS_HAL_CHANGE_TASK_PRIORITY.ioc&apos; to &apos;9_INTERNAL_FREERTOS_HAL_CHANGE_TASK_PRIORITY.ioc&apos;" description="Rename resource &apos;8_INTERNAL_FREERTOS_HAL_CHANGE_TASK_PRIORITY.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="8_INTERNAL_FREERTOS_HAL_CHANGE_TASK_PRIORITY.ioc" name="9_INTERNAL_FREERTOS_HAL_CHANGE_TASK_PRIORITY.ioc" stamp="1661706618239" updateReferences="true"/>
+</session>

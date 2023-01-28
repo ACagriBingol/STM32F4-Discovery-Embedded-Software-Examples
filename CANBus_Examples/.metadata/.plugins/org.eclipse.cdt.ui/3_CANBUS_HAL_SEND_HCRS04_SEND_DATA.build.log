@@ -1,0 +1,30 @@
+18:37:42 **** Incremental Build of configuration Debug for project 3_CANBUS_HAL_SEND_HCRS04_SEND_DATA ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:65: warning: passing argument 4 of 'HAL_CAN_AddTxMessage' makes pointer from integer without a cast [-Wint-conversion]
+  148 |    HAL_CAN_AddTxMessage(&hcan1, &pTxHeader, (uint8_t*)distance, mTxMailbox);
+      |                                                                 ^~~~~~~~~~
+      |                                                                 |
+      |                                                                 uint32_t {aka long unsigned int}
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:299,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h:678:122: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint32_t' {aka 'long unsigned int'}
+  678 | HAL_StatusTypeDef HAL_CAN_AddTxMessage(CAN_HandleTypeDef *hcan, CAN_TxHeaderTypeDef *pHeader, uint8_t aData[], uint32_t *pTxMailbox);
+      |                                                                                                                ~~~~~~~~~~^~~~~~~~~~
+arm-none-eabi-gcc -o "3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\abdul\STM32CubeIDE\CANBus_Examples\3_CANBUS_HAL_SEND_HCRS04_SEND_DATA\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.elf
+ 
+arm-none-eabi-size   3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.elf 
+arm-none-eabi-objdump -h -S  3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.elf  > "3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.list"
+   text	   data	    bss	    dec	    hex	filename
+   8184	     20	   1684	   9888	   26a0	3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.elf
+Finished building: default.size.stdout
+ 
+Finished building: 3_CANBUS_HAL_SEND_HCRS04_SEND_DATA.list
+ 
+
+18:37:43 Build Finished. 0 errors, 1 warnings. (took 943ms)
+

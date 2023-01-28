@@ -1,0 +1,30 @@
+20:44:42 **** Incremental Build of configuration Debug for project 9_FREERTOS_BLOCKING_DELAY_API ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'task_1_Uart':
+../Core/Src/main.c:262:29: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  262 |  HAL_UART_Transmit(&huart2, myMessage, strlen(myMessage), 100);
+      |                             ^~~~~~~~~
+      |                             |
+      |                             char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "9_FREERTOS_BLOCKING_DELAY_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\abdul\STM32CubeIDE\FreeRTOS_Examples\9_FREERTOS_BLOCKING_DELAY_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="9_FREERTOS_BLOCKING_DELAY_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 9_FREERTOS_BLOCKING_DELAY_API.elf
+ 
+arm-none-eabi-size   9_FREERTOS_BLOCKING_DELAY_API.elf 
+arm-none-eabi-objdump -h -S  9_FREERTOS_BLOCKING_DELAY_API.elf  > "9_FREERTOS_BLOCKING_DELAY_API.list"
+   text	   data	    bss	    dec	    hex	filename
+  16360	    124	  18012	  34496	   86c0	9_FREERTOS_BLOCKING_DELAY_API.elf
+Finished building: default.size.stdout
+ 
+Finished building: 9_FREERTOS_BLOCKING_DELAY_API.list
+ 
+
+20:44:44 Build Finished. 0 errors, 1 warnings. (took 1s.538ms)
+

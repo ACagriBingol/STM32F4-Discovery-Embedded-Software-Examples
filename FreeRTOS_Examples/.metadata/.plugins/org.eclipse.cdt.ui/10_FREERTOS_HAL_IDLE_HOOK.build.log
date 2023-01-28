@@ -1,0 +1,17 @@
+23:24:47 **** Incremental Build of configuration Debug for project 10_FREERTOS_HAL_IDLE_HOOK ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/10_FREERTOS_HAL_IDLE_HOOK/Middlewares/Third_Party/FreeRTOS/org/source/portable/GCC/ARM_CM4F" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/10_FREERTOS_HAL_IDLE_HOOK/Middlewares/Third_Party/FreeRTOS/org/source/include" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/10_FREERTOS_HAL_IDLE_HOOK/FreeRTOSConfig" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "10_FREERTOS_HAL_IDLE_HOOK.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\abdul\STM32CubeIDE\FreeRTOS_Examples\10_FREERTOS_HAL_IDLE_HOOK\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_FREERTOS_HAL_IDLE_HOOK.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_FREERTOS_HAL_IDLE_HOOK.elf
+ 
+arm-none-eabi-size   10_FREERTOS_HAL_IDLE_HOOK.elf 
+arm-none-eabi-objdump -h -S  10_FREERTOS_HAL_IDLE_HOOK.elf  > "10_FREERTOS_HAL_IDLE_HOOK.list"
+   text	   data	    bss	    dec	    hex	filename
+  14908	     28	  78804	  93740	  16e2c	10_FREERTOS_HAL_IDLE_HOOK.elf
+Finished building: default.size.stdout
+ 
+Finished building: 10_FREERTOS_HAL_IDLE_HOOK.list
+ 
+
+23:24:49 Build Finished. 0 errors, 0 warnings. (took 1s.742ms)
+

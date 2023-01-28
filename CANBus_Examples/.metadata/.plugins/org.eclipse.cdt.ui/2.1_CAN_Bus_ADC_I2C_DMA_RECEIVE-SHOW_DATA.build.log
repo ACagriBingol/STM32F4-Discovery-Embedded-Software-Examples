@@ -1,0 +1,10 @@
+18:41:26 **** Incremental Build of configuration Debug for project 2.1_CAN_Bus_ADC_I2C_DMA_RECEIVE-SHOW_DATA ****
+make -j8 all 
+arm-none-eabi-size   2.1_CAN_Bus_ADC_I2C_DMA_RECEIVE-SHOW_DATA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12276	     20	   1788	  14084	   3704	2.1_CAN_Bus_ADC_I2C_DMA_RECEIVE-SHOW_DATA.elf
+Finished building: default.size.stdout
+ 
+
+18:41:27 Build Finished. 0 errors, 0 warnings. (took 325ms)
+

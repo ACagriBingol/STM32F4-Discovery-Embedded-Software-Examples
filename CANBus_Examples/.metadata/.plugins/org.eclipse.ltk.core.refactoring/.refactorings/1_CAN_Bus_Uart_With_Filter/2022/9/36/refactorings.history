@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;1_CAN_Bus_Uart_With_Filter/0_CAN_Bus_Uart_Without_Filter.ioc&apos; to &apos;1_CAN_Bus_Uart_With_Filter.ioc&apos;" description="Rename resource &apos;0_CAN_Bus_Uart_Without_Filter.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="0_CAN_Bus_Uart_Without_Filter.ioc" name="1_CAN_Bus_Uart_With_Filter.ioc" stamp="1662236148980" updateReferences="true"/>
+</session>

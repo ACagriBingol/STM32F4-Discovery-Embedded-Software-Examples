@@ -1,0 +1,31 @@
+18:35:53 **** Incremental Build of configuration Debug for project 13_FREERTOS_HELLO_WORLD_UART ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/13_FREERTOS_HELLO_WORLD_UART/Middlewares/Third_Party/FreeRTOS/org/source/include" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/13_FREERTOS_HELLO_WORLD_UART/FreeRTOSConfig" -I"D:/Users/abdul/STM32CubeIDE/FreeRTOS_Examples/13_FREERTOS_HELLO_WORLD_UART/Middlewares/Third_Party/FreeRTOS/org/source/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'myTask1':
+../Core/Src/main.c:217:22: warning: statement with no effect [-Wunused-value]
+  217 |      UART_ACCSESS_KEY==0;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:219:22: warning: statement with no effect [-Wunused-value]
+  219 |      UART_ACCSESS_KEY==1;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c: In function 'myTask2':
+../Core/Src/main.c:232:22: warning: statement with no effect [-Wunused-value]
+  232 |      UART_ACCSESS_KEY==0;
+      |      ~~~~~~~~~~~~~~~~^~~
+../Core/Src/main.c:234:22: warning: statement with no effect [-Wunused-value]
+  234 |      UART_ACCSESS_KEY==1;
+      |      ~~~~~~~~~~~~~~~~^~~
+arm-none-eabi-gcc -o "13_FREERTOS_HELLO_WORLD_UART.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Users\abdul\STM32CubeIDE\FreeRTOS_Examples\13_FREERTOS_HELLO_WORLD_UART\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_FREERTOS_HELLO_WORLD_UART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_FREERTOS_HELLO_WORLD_UART.elf
+ 
+arm-none-eabi-size   13_FREERTOS_HELLO_WORLD_UART.elf 
+arm-none-eabi-objdump -h -S  13_FREERTOS_HELLO_WORLD_UART.elf  > "13_FREERTOS_HELLO_WORLD_UART.list"
+   text	   data	    bss	    dec	    hex	filename
+  19684	    132	  78892	  98708	  18194	13_FREERTOS_HELLO_WORLD_UART.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_FREERTOS_HELLO_WORLD_UART.list
+ 
+
+18:35:55 Build Finished. 0 errors, 4 warnings. (took 1s.65ms)
+

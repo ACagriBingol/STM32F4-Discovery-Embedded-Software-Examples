@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;12_FREERTOS_BINARY_SEMAPHORE_TWO_TASKS/11_FREERTOS_QUEUE_PROCESSING_UNFINISHED.ioc&apos; to &apos;12_FREERTOS_BINARY_SEMAPHORE_TWO_TASKS.ioc&apos;" description="Rename resource &apos;11_FREERTOS_QUEUE_PROCESSING_UNFINISHED.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="11_FREERTOS_QUEUE_PROCESSING_UNFINISHED.ioc" name="12_FREERTOS_BINARY_SEMAPHORE_TWO_TASKS.ioc" stamp="1661863390739" updateReferences="true"/>
+</session>
